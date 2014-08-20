@@ -8,11 +8,11 @@ int main(){
 
 	if(fp == NULL){
 		printf("No se encuentra el archivo :P ");
-		return 0;
 	}
-
-	while(!feof(fp)){
-		printf("%c", fgetc(fp));
+	else{
+		while(!feof(fp)){
+			printf("%c", fgetc(fp));
+		}
 	}
 
 	return 0;
