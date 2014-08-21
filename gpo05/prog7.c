@@ -45,3 +45,13 @@ int main(){
 
 	return 0;
 }
+
+ void guardar(struct Alumno *lista){
+ 	
+ }
+
+
+
+
+
+
