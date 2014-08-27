@@ -4,11 +4,13 @@
 double f(double num);
 
 int main(){
-double a, b, c, error;
+double a, b, c, error, tolerancia;
 int iteracion = 0;
 
 a = 1.2; 
 b = 1.4;
+error = 0.0;
+tolerancia = 0.002;
 
 do{
 	c = (a+b)/2;
@@ -18,12 +20,12 @@ do{
 	else
 		a = c;
 
+	error = fabs(a - b); 
 
-
-	printf("\nValor de c %f", c);
+	printf("\n %d .- Valor de c %f - Error %f",iteracion, c, error);
 	iteracion = iteracion + 1 ;
 
-}while(iteracion < 15);
+}while(error > tolerancia);
 
 printf("\n\n");
 
