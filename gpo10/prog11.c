@@ -16,7 +16,6 @@ do{
 	c = (a+b)/2;
 	if(f(a)*f(c)<0)
 		b = c;
-
 	else
 		a = c;
 
@@ -32,7 +31,6 @@ printf("\n\n");
 }
 
 double f(double num){
-
 	return (num * exp(num)) - 5;
 }
 
