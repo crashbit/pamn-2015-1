@@ -26,7 +26,7 @@ int main(){
 
 		printf("\n %d.- %f", i, c);
 
-	}while(error > tolerancia);
+	}while(error > tolerancia || f(c)==0);
 	printf("\n\n");
 
 }
