@@ -9,8 +9,8 @@ int main(){
 	int i,j,n, k;
 
 	n = 3;
-	// i son columnas
-	// j son renglones
+	// i son renglones
+	// j son columnas
 
 	for(i=0;i<n;i++){
 		for(j=i+1;j<n;j++){
