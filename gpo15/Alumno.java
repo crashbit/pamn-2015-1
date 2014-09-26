@@ -8,9 +8,18 @@ public class Alumno{
 	// Declarando constructor
 
 	public Alumno(){
-		System.out.println("Construyendo al alumno");
 		numAlumnos = numAlumnos +1;
 		id = numAlumnos;
+		nombre = "Don nadie";
+		carrera = "no hago nada";
+	}
+
+	public Alumno(String nombre, String carrera){
+		numAlumnos = numAlumnos +1;
+		id = numAlumnos;
+		this.nombre = nombre;
+		this.carrera = carrera;
+
 	}
 
 	// Declarando metodos
