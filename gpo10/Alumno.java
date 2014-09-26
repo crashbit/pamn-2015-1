@@ -19,7 +19,6 @@ public class Alumno{
 	public String toString(){
 		return "Yo soy " + this.nombre + "y mi numero de cuenta es: "+numCuenta;
 	}
-
 }
 
 

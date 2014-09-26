@@ -7,6 +7,6 @@ class Alumno:
 
 
 
-fabiola = Alumno("fabiola")
+fabiola = Alumno()
 
 print (fabiola.nombre)
