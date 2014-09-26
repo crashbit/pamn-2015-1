@@ -26,4 +26,17 @@ public class Alumno{
 	void leer(){
 		System.out.println("Alumno leyendo");
 	}
+
+	// Sobrecarga de metodos heredados
+
+	public String toString(){
+		String cadena;
+		cadena = " Yo me llamo " + this.nombre;
+		cadena = cadena + " y estudio: " + this.carrera;
+		cadena = cadena + " y mi id es: " + this.id;
+
+		return cadena;
+	}
+
+
 }
