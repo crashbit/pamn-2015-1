@@ -2,8 +2,8 @@ public class Empleado{
 	//Declarando propiedades
 	static int totalEmpleados =0;
 	int id = 1;
-	String nombre;
-	String puesto;
+	private String nombre;
+	protected String puesto;
 
 	//Declarando constructores
 	public Empleado(){
@@ -34,5 +34,16 @@ public class Empleado{
 
 		return cadena;
 	}
+
+	// Creando getters y setter
+	
+	String getNombre(){
+		return this.nombre;
+	}
+
+	void setNombre(String nombre){
+		this.nombre = nombre;
+	}
+
 
 }
