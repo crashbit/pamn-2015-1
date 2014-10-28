@@ -10,7 +10,7 @@ public class SocketClient{
 		// Creamos un par de variables:
 		// Una manejara el servidor
 		// Una manejara el puerto al cuál nos conectaremos
-		String servidor = "pamn.net";
+		String servidor = "www.unam.mx";
 		int puerto = 80;
 
 		String cadena;
