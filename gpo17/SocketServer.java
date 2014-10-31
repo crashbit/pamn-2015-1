@@ -9,7 +9,7 @@ public class SocketServer{
 		Socket cliente;
 		ServerSocket servidor = new ServerSocket(8000);
 		String cadena, cadena2;
-
+	
 		cliente = servidor.accept();
 		Scanner teclado = new Scanner(System.in);
 
@@ -26,8 +26,6 @@ public class SocketServer{
 			cadena = entrada.readLine();
 			System.out.println("Cliente dice: " + cadena);
 		}
-
-
 
 
 	}
