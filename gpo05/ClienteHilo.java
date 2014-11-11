@@ -39,9 +39,28 @@ public class ClienteHilo extends Thread{
 		}
 
 		while(true){
-			
+			String comentario = entrada.readLine();
+			if(comentario.startsWith("/salir")){
+				break;
+			}
+			for(i = 0; i< totalUsuarios; i++){
+				if(hilos[i] != null && hilos[i] != this)
+					hilos[i].salida.println(nombre + " dijo: " + comentario);
+			}
 		}
 
+		for(i = 0; i< totalUsuarios; i++){
+			if(hilos[i] != null && hilos[i] != this)
+				hilos[i].salida.println(nombre + " se retira del chat ");
+		}
+
+		for(i = 0; i< totalUsuarios; i++){
+			if(hilos[i] == this)
+				hilos[i]=null;
+		}
+
+		salida.close();
+		entrada.close();
 			
 		}catch(Exception e){
 

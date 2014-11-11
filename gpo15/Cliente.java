@@ -7,7 +7,7 @@ public class Cliente{
 	public static void main(String args[]) throws UnknownHostException, IOException{
 
 		String cadena;
-		Socket conecta = new Socket("www.unam.mx", 80);
+		Socket conecta = new Socket("localhost", 8080);
 
 		InputStreamReader isr = new InputStreamReader(conecta.getInputStream());
 		BufferedReader entrada = new BufferedReader(isr);
@@ -21,3 +21,6 @@ public class Cliente{
 
 	}
 }
+
+
+
