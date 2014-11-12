@@ -38,10 +38,43 @@ public class ClienteHilo extends Thread{
 				hilos[i].salida.println("Acaba de entrar " + nombre);
 		}
 
+		String comentario;
+
+		while(true){
+			comentario = entrada.readLine();
+			if(comentario.startsWith("/salir"))
+				break;
+			for(i = 0; i< totalUsuarios; i++){
+			if(hilos[i] != null && hilos[i] != this)
+				hilos[i].salida.println(nombre + " dijo: " + comentario);
+			}
+		}	
+
+		for(i = 0; i< totalUsuarios; i++){
+			if(hilos[i] != null && hilos[i] != this)
+				hilos[i].salida.println(nombre + " se fué !!!");
+		}
+
+		for(i = 0; i< totalUsuarios; i++){
+			if(hilos[i] == this)
+				hilos[i] = null;
+		}
+		
+
+		salida.close();
+		entrada.close();
 			
 		}catch(Exception e){
 
 		}
+		
 	}
 
 }
+
+
+
+
+
+
+
